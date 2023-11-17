@@ -99,7 +99,7 @@
 ## the mainloop is always running. after close the window it will stop, then
 ## another lines will be executed
 
-
+--------- lesson is over ---------------
 
 
 
