@@ -78,6 +78,20 @@ root.mainloop()
 
 
 
+            # ----------- lesson 2 is over and -----------keep learning----------
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
