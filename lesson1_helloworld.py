@@ -13,7 +13,7 @@
 		--- Here's a brief overview of some key components in Tkinter: '
 
 		1- Widgets: 
-				Tkinter provides a variety of widgets such as buttons, lables, entry
+				Tkinter provides a variety of widgets such as buttons, labels, entry
 				fields, textboxes, and more. These are the building blocks for 
 				constructing your GUI.
 
@@ -78,7 +78,7 @@
 		# height, width = 400, 400
 		# root.geometry(f'{width}x{height}')
 
-## this is is startin left up corner, (0,0 point)
+## this is is starting left up corner, (0,0 point)
 #   we have to change this 
 		# root.geometry(f'{width}x{height}+100+100') # widthxheight + left + top
 
@@ -99,7 +99,9 @@
 ## the mainloop is always running. after close the window it will stop, then
 ## another lines will be executed
 
---------- lesson is over ---------------
+			
+			
+				--------- lesson is over ---------------
 
 
 
