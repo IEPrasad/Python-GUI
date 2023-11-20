@@ -68,6 +68,9 @@ label_1.pack()
 root.mainloop()
 
 
+# ------------------ lesson 4 is over -------------
+
+
 
 
 
