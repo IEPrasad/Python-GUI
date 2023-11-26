@@ -16,7 +16,7 @@ check1_var = tk.StringVar()
 check2_var = tk.StringVar()
 
 def checkbox_results():
-    output_string = "Selected languages: " + check1_var.get() + check2_var.get()
+    output_string = "Selected languages: " + check1_var.get() + " " + check2_var.get()
     label_var.set(output_string)
     # print(check1_var.get())
     # print(check2_var.get())
