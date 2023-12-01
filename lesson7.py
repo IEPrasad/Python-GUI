@@ -49,3 +49,41 @@
 # users to intract with a system choosing from a predefined set of options or entering custom 
 # values.
 
+import tkinter as tk
+from tkinter import ttk
+from calendar import month_name
+
+
+root = tk.Tk()
+
+root.title('Combobox')
+root.geometry('300x200')
+root.resizable(False, False)
+
+combobox = ttk.Combobox(root, values=['Python', 'Java', 'C++'])
+combobox.pack()
+
+# print(month_name)
+# >>> nothing
+print(month_name[1])
+# >>> January 
+print(month_name[2])
+# >>> February
+
+root.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
