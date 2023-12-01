@@ -37,5 +37,85 @@
   # on the specific requirements of the user interface and the type of input you want to 
   # collect from the user.
 
+# import tkinter as tk
+# from tkinter import ttk
+
+# root = tk.Tk()
+
+# root.title('Radion Buttons')
+# root.geometry('300x200')
+# root.resizable(False, False)
+
+# radio1 = ttk.Radiobutton(root, text='Python')
+# radio1.pack()
+
+# radio2 = ttk.Radiobutton(root, text='Java')
+# radio2.pack()
+
+# radio3 = ttk.Radiobutton(root, text= 'C++')
+# radio3.pack()
+
+# root.mainloop()
+
+#### above we create the three radion buttons but there is a problem 
+  # if we click the one radion button when all are select automatically .....
+  ## for doing this we have to separate these all are from each other .....
+  ## for this we have to give the value for that....
 
 
+# import tkinter as tk
+# from tkinter import ttk
+
+# root = tk.Tk()
+
+# root.title('Radion Buttons')
+# root.geometry('300x200')
+# root.resizable(False, False)
+
+# radio1 = ttk.Radiobutton(root, text='Python', value='Python')
+# radio1.pack()
+
+# radio2 = ttk.Radiobutton(root, text='Java', value='Java')
+# radio2.pack()
+
+# radio3 = ttk.Radiobutton(root, text= 'C++', value='C++')
+# radio3.pack()
+
+# root.mainloop()
+
+## now we solve this problem 
+  ## now let's see how to add variables for that..........
+
+
+
+import tkinter as tk
+from tkinter import ttk
+
+root = tk.Tk()
+
+root.title('Radion Buttons')
+root.geometry('300x200')
+root.resizable(False, False)
+
+radio_var = tk.StringVar()
+
+
+def select_radio():
+  label.configure(text=radio_var.get())
+
+radio1 = ttk.Radiobutton(root, text='Python', value='Python', variable=radio_var, command=select_radio)
+radio1.pack()
+
+radio2 = ttk.Radiobutton(root, text='Java', value='Java', variable=radio_var, command=select_radio)
+radio2.pack()
+
+radio3 = ttk.Radiobutton(root, text= 'C++', value='C++', variable=radio_var, command=select_radio)
+radio3.pack()
+
+label = ttk.Label(root)
+label.pack()
+
+root.mainloop()
+
+
+# ----------------- lesson 6 is over --------------
