@@ -49,10 +49,56 @@
 # users to intract with a system choosing from a predefined set of options or entering custom 
 # values.
 
+# import tkinter as tk
+# from tkinter import ttk
+# from calendar import month_name
+
+
+# root = tk.Tk()
+
+# root.title('Combobox')
+# root.geometry('300x200')
+# root.resizable(False, False)
+
+# combobox = ttk.Combobox(root, values=['Python', 'Java', 'C++'])
+# combobox.pack()
+
+# # print(month_name)
+# # >>> nothing
+# print(month_name[1])
+# # >>> January 
+# print(month_name[2])
+# # >>> February
+
+# root.mainloop()
+
+# ---------------------
+
+# import tkinter as tk
+# from tkinter import ttk
+# from calendar import month_name
+
+# root = tk.Tk()
+
+# root.title('Combobox')
+# root.geometry('300x200')
+# root.resizable(False, False)
+
+# month_name = [month_name[i] for i in range(1, 13)]
+# print(month_name)
+# # >>>> ['January, Feb ....', 'December']
+
+
+# combobox = ttk.Combobox(root, values=['Python', 'Java', 'C++'])
+# combobox.pack()
+
+# root.mainloop()
+
+## now we try to set these month values to our combobox
+
 import tkinter as tk
 from tkinter import ttk
 from calendar import month_name
-
 
 root = tk.Tk()
 
@@ -60,26 +106,24 @@ root.title('Combobox')
 root.geometry('300x200')
 root.resizable(False, False)
 
-combobox = ttk.Combobox(root, values=['Python', 'Java', 'C++'])
+selected_month = tk.StringVar()
+
+
+month_names = [month_name[i] for i in range(1, 13)]
+# print(month_names)
+# >>>> ['January, Feb ....', 'December']
+
+
+combobox = ttk.Combobox(root, values=month_names, textvariable=selected_month)
 combobox.pack()
 
-# print(month_name)
-# >>> nothing
-print(month_name[1])
-# >>> January 
-print(month_name[2])
-# >>> February
+label = ttk.Label(root, textvariable=selected_month)
+label.pack()
+
 
 root.mainloop()
 
-
-
-
-
-
-
-
-
+# ------------- lesson 7 is over ----------
 
 
 
