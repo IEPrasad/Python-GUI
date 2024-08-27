@@ -68,6 +68,44 @@ label_1.pack()
 root.mainloop()
 
 
+'''
+import tkinter as tk
+from tkinter import ttk
+
+# Initialize the main window
+root = tk.Tk()
+root.title('Sum Calculator')
+root.geometry('400x300')
+
+# Define the function to calculate the sum
+def calculate_sum():
+    num1 = int(entry1.get())
+    num2 = int(entry2.get())
+    result.set(f'Answer is {num1 + num2}')
+
+# Variables to store user input and the result
+result = tk.StringVar()
+
+# Create and place the input fields
+entry1 = ttk.Entry(root)
+entry1.pack()
+
+entry2 = ttk.Entry(root)
+entry2.pack()
+
+# Create and place the button
+button = ttk.Button(root, text="Calculate", command=calculate_sum)
+button.pack()
+
+# Create and place the label to display the result
+label_result = ttk.Label(root, textvariable=result)
+label_result.pack()
+
+# Run the main loop
+root.mainloop()
+'''
+
+
 # ------------------ lesson 4 is over -------------
 
 
