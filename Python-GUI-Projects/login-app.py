@@ -25,5 +25,12 @@ user.place(x=30, y=80)
 
 # Frame for user entry underline
 Frame(frame, width=295, height=2, bg='black').place(x=25, y=107)
+user.insert(0, 'Username')
+
+
 
 window.mainloop()
+
+
+
+
