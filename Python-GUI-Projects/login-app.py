@@ -27,10 +27,15 @@ user.place(x=30, y=80)
 Frame(frame, width=295, height=2, bg='black').place(x=25, y=107)
 user.insert(0, 'Username')
 
+# Step 1 - Add Password entry
+password = Entry(frame, width=25, fg='black', bg='white', font=('Microsoft Yahei UI Light', 11), show='*')
+password.place(x=30, y=150)
 
+# Frame for password entry underline
+Frame(frame, width=295, height=2, bg='black').place(x=25, y=177)
+password.insert(0, 'Password')
+
+# Sign Up button
+Button(frame, width=39, pady=7, text='Sign up', bg='#57a1f8', fg='white', border=0).place(x=35, y=240)
 
 window.mainloop()
-
-
-
-
