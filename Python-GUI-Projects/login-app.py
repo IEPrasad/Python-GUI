@@ -27,7 +27,7 @@ user.place(x=30, y=80)
 Frame(frame, width=295, height=2, bg='black').place(x=25, y=107)
 user.insert(0, 'Username')
 
-# Step 1 - Add Password entry
+# Password entry
 password = Entry(frame, width=25, fg='black', bg='white', font=('Microsoft Yahei UI Light', 11), show='*')
 password.place(x=30, y=150)
 
@@ -37,5 +37,23 @@ password.insert(0, 'Password')
 
 # Sign Up button
 Button(frame, width=39, pady=7, text='Sign up', bg='#57a1f8', fg='white', border=0).place(x=35, y=240)
+
+# Step 2 - Add Confirm Password entry
+confirm_password = Entry(frame, width=25, fg='black', bg='white', font=('Microsoft Yahei UI Light', 11), show='*')
+confirm_password.place(x=30, y=220)
+
+# Frame for confirm password underline
+Frame(frame, width=295, height=2, bg='black').place(x=25, y=247)
+confirm_password.insert(0, 'Confirm Password')
+
+# Function to handle sign-up logic
+def signup():
+    if password.get() == confirm_password.get():
+        messagebox.showinfo('Success', 'Sign Up Successful')
+    else:
+        messagebox.showerror('Error', 'Passwords do not match')
+
+# Link the button to the signup function
+Button(frame, width=39, pady=7, text='Sign up', bg='#57a1f8', fg='white', border=0, command=signup).place(x=35, y=300)
 
 window.mainloop()
